@@ -28,8 +28,7 @@ export default function HeroSection() {
           alt="Gurav Study Point background" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/80 via-purple-900/70 to-blue-900/80" />
-      </div>
+          </div>
       
       {/* Floating Shapes Animation */}
       <motion.div 
@@ -86,7 +85,7 @@ export default function HeroSection() {
         </motion.h1>
         
         <motion.p 
-          className="mt-3 text-xl sm:text-2xl md:text-3xl font-bold text-white bg-black/30 backdrop-blur-sm rounded-lg py-2 px-4 mx-2 sm:mx-0"
+          className="mt-3 text-xl sm:text-2xl md:text-3xl font-bold text-black backdrop-blur-sm rounded-lg py-2 px-4 mx-2 sm:mx-0"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7 }}
@@ -95,7 +94,7 @@ export default function HeroSection() {
         </motion.p>
         
         <motion.p 
-          className="mt-3 text-base sm:text-lg md:text-xl font-medium text-white bg-black/30 backdrop-blur-sm rounded-lg py-2 px-4 mx-2 sm:mx-auto max-w-2xl"
+          className="mt-3 text-base sm:text-lg md:text-xl font-medium text-black backdrop-blur-sm rounded-lg py-2 px-4 mx-2 sm:mx-auto max-w-2xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.9 }}
@@ -142,7 +141,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 1.3 }}
         >
           <motion.div 
-            className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl"
+            className="  p-4 sm:p-6 rounded-2xl shadow-xl"
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-500">
@@ -152,7 +151,7 @@ export default function HeroSection() {
           </motion.div>
           
           <motion.div 
-            className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl"
+            className=" p-4 sm:p-6 rounded-2xl shadow-xl"
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-500">
@@ -162,7 +161,7 @@ export default function HeroSection() {
           </motion.div>
           
           <motion.div 
-            className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl"
+            className="  p-4 sm:p-6 rounded-2xl shadow-xl"
             whileHover={{ scale: 1.05 }}
           >
             <span className="text-4xl sm:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-500">
