@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## JTTI Institute Website
 
-## Getting Started
+A modern website built with Next.js App Router, React, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+### Tech stack
+- **Framework**: Next.js 15 (App Router)
+- **UI**: React 19, Tailwind CSS v4
+- **Animation**: Framer Motion
+- **Fonts**: `next/font` (Geist)
 
+### Requirements
+- **Node.js**: 18.18+ or 20+
+- **Package manager**: npm, pnpm, yarn, or bun
+
+### Getting started
 ```bash
+git clone <your-repo-url>
+cd project
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Open `http://localhost:3000` in your browser.
+
+### Available scripts
+- **dev**: Start the development server
+  - `npm run dev`
+- **build**: Create a production build
+  - `npm run build`
+- **start**: Start the production server (after build)
+  - `npm run start`
+- **lint**: Run ESLint
+  - `npm run lint`
+
+### Project structure
+```text
+project/
+  src/
+    app/
+      layout.js        # Root layout, fonts, global styles
+      page.js          # Home page (uses Navbar and Hero)
+      globals.css      # Tailwind base styles
+    components/
+      Navbar.jsx       # Top navigation bar
+      Hero.jsx         # Hero section
+  public/              # Static assets (images, SVGs)
+  next.config.mjs      # Next.js configuration
+  postcss.config.mjs   # Tailwind v4 via @tailwindcss/postcss
+  package.json         # Scripts and dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Styling (Tailwind CSS v4)
+- Tailwind v4 is enabled via PostCSS plugin `@tailwindcss/postcss` in `postcss.config.mjs`.
+- Global styles are imported in `src/app/layout.js` from `src/app/globals.css`.
+- Use utility classes directly in your React components.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Fonts
+`next/font` is configured in `src/app/layout.js` to load Geist Sans and Geist Mono with CSS variables for seamless usage.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Deployment
+- **Vercel** (recommended): Import the repo and deploy. Framework preset: Next.js. Build command: `next build`. Output: `.next`.
+- **Self-hosted**: Build with `npm run build` and run with `npm run start` behind a reverse proxy.
 
-## Learn More
+### Contributing
+1. Create a new branch: `feat/your-feature` or `fix/your-fix`
+2. Run `npm run dev` and ensure no ESLint errors (`npm run lint`)
+3. Open a PR with a clear description and screenshots if UI-related
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### License
+Add a license if applicable (e.g., MIT). If unspecified, all rights reserved by default.
